@@ -1,5 +1,7 @@
 # AresClient
 
+[![Build Status](https://travis-ci.org/kraxnet/ares_client.png)](https://travis-ci.org/kraxnet/ares_client)
+
 This gem uses API to access data from Czech Register of Economic Subjects (ARES MFCR - http://wwwinfo.mfcr.cz)
 
 ## Installation
