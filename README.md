@@ -1,6 +1,6 @@
 # AresClient
 
-TODO: Write a gem description
+This gem uses API to access data from Czech Register of Economic Subjects (ARES MFCR - http://wwwinfo.mfcr.cz)
 
 ## Installation
 

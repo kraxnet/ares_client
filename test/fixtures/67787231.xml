@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<are:Ares_odpovedi xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.2" xmlns:dtt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.2" xmlns:udt="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.1" odpoved_datum_cas="2013-08-16T00:40:35" odpoved_pocet="1" odpoved_typ="Basic" vystup_format="XML" xslt="klient" validation_XSLT="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_odpovedi.xsl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.2 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.2/ares_answer_basic_v_1.0.2.xsd" Id="ares">
+<are:Odpoved>
+<dtt:Pomocne_ID>0</dtt:Pomocne_ID>
+<dtt:Vysledek_hledani>
+<dtt:Kod>1</dtt:Kod>
+</dtt:Vysledek_hledani>
+<dtt:Pocet_zaznamu>1</dtt:Pocet_zaznamu>
+<dtt:Uvod>
+<dtt:Nadpis>Výpis z dat Registru ARES - aktuální stav ke dni 2013-08-15</dtt:Nadpis>
+<dtt:Aktualizace_DB>2013-08-15</dtt:Aktualizace_DB>
+<dtt:Datum_vypisu>2013-08-16</dtt:Datum_vypisu>
+<dtt:Cas_vypisu>00:40:37</dtt:Cas_vypisu>
+<dtt:Typ_odkazu>0</dtt:Typ_odkazu>
+</dtt:Uvod>
+<dtt:Vypis_basic>
+<dtt:ICO zdroj="RZP">67787231</dtt:ICO>
+<dtt:DIC zdroj="DPH">CZ8002180461</dtt:DIC>
+<dtt:Obchodni_firma zdroj="RZP">Ing. Jiří Kubíček</dtt:Obchodni_firma>
+<dtt:Datum_vzniku>1998-04-01</dtt:Datum_vzniku>
+<dtt:Pravni_forma zdroj="RZP">
+<dtt:Kod_PF>101</dtt:Kod_PF>
+<dtt:Nazev_PF>Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku</dtt:Nazev_PF>
+</dtt:Pravni_forma>
+<dtt:Adresa_dorucovaci zdroj="ARES">
+<dtt:Ulice_cislo>Kamenická 599</dtt:Ulice_cislo>
+<dtt:PSC_obec>17000 Praha</dtt:PSC_obec>
+</dtt:Adresa_dorucovaci>
+<dtt:Adresa_ARES zdroj="ARES">
+<dtt:ID_adresy>400559723</dtt:ID_adresy>
+<dtt:Kod_statu>203</dtt:Kod_statu>
+<dtt:Nazev_statu>Česká republika</dtt:Nazev_statu>
+<dtt:Nazev_okresu>Hlavní město Praha</dtt:Nazev_okresu>
+<dtt:Nazev_obce>Praha</dtt:Nazev_obce>
+<dtt:Nazev_casti_obce>Holešovice</dtt:Nazev_casti_obce>
+<dtt:Nazev_mestske_casti>Praha 7</dtt:Nazev_mestske_casti>
+<dtt:Nazev_ulice>Kamenická</dtt:Nazev_ulice>
+<dtt:Cislo_domovni>599</dtt:Cislo_domovni>
+<dtt:Typ_cislo_domovni>1</dtt:Typ_cislo_domovni>
+<dtt:Cislo_orientacni>26</dtt:Cislo_orientacni>
+<dtt:PSC>17000</dtt:PSC>
+<dtt:Adresa_UIR>
+<udt:Kod_oblasti>19</udt:Kod_oblasti>
+<udt:Kod_kraje>19</udt:Kod_kraje>
+<udt:Kod_okresu>3100</udt:Kod_okresu>
+<udt:Kod_obce>554782</udt:Kod_obce>
+<udt:Kod_pobvod>78</udt:Kod_pobvod>
+<udt:Kod_sobvod>78</udt:Kod_sobvod>
+<udt:Kod_casti_obce>490067</udt:Kod_casti_obce>
+<udt:Kod_mestske_casti>500186</udt:Kod_mestske_casti>
+<udt:PSC>17000</udt:PSC>
+<udt:Kod_ulice>451274</udt:Kod_ulice>
+<udt:Cislo_domovni>599</udt:Cislo_domovni>
+<udt:Typ_cislo_domovni>1</udt:Typ_cislo_domovni>
+<udt:Cislo_orientacni>26</udt:Cislo_orientacni>
+<udt:Kod_adresy>22301224</udt:Kod_adresy>
+<udt:Kod_objektu>22139753</udt:Kod_objektu>
+<udt:PCD>2506799</udt:PCD>
+</dtt:Adresa_UIR>
+</dtt:Adresa_ARES>
+<dtt:Priznaky_subjektu>NNAANANNNNNNNNNNNNNNNNNNANNNNN</dtt:Priznaky_subjektu>
+<dtt:Registrace_RZP>
+<dtt:Zivnostensky_urad>
+<dtt:Kod_ZU>310007</dtt:Kod_ZU>
+<dtt:Nazev_ZU>Úřad městské části Praha 7</dtt:Nazev_ZU>
+</dtt:Zivnostensky_urad>
+<dtt:Financni_urad>
+<dtt:Kod_FU>7</dtt:Kod_FU>
+<dtt:Nazev_FU>Praha 7</dtt:Nazev_FU>
+</dtt:Financni_urad>
+</dtt:Registrace_RZP>
+<dtt:Kategorie_poctu_pracovniku zdroj="RES">Bez zaměstnanců</dtt:Kategorie_poctu_pracovniku>
+<dtt:Nace>
+<dtt:NACE zdroj="RES">68320</dtt:NACE>
+<dtt:NACE zdroj="RES">471</dtt:NACE>
+<dtt:NACE zdroj="RES">63</dtt:NACE>
+<dtt:NACE zdroj="RES">812</dtt:NACE>
+</dtt:Nace>
+<dtt:Predmety_podnikani>
+<dtt:Predmet_podnikani zdroj="RZP">
+<dtt:Text>Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona</dtt:Text>
+</dtt:Predmet_podnikani>
+</dtt:Predmety_podnikani>
+<dtt:Obory_cinnosti>
+<dtt:Obor_cinnosti>
+<dtt:Kod>L03001</dtt:Kod>
+<dtt:Text>Koupě zboží za účelem jeho dalšího prodeje a prodej - vyjma zboží uvedeného v příl.zák. č.455/91 Sb. a zboží tímto zákonem vyloučeného</dtt:Text>
+</dtt:Obor_cinnosti>
+<dtt:Obor_cinnosti>
+<dtt:Kod>L05115</dtt:Kod>
+<dtt:Text>Automatizované zpracování dat</dtt:Text>
+</dtt:Obor_cinnosti>
+<dtt:Obor_cinnosti>
+<dtt:Kod>L06006</dtt:Kod>
+<dtt:Text>Úklidové práce</dtt:Text>
+</dtt:Obor_cinnosti>
+<dtt:Obor_cinnosti>
+<dtt:Kod>L06027</dtt:Kod>
+<dtt:Text>Správa nemovitostí</dtt:Text>
+</dtt:Obor_cinnosti>
+</dtt:Obory_cinnosti>
+</dtt:Vypis_basic>
+</are:Odpoved>
+</are:Ares_odpovedi>
