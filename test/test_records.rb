@@ -1,3 +1,5 @@
+# -*- encoding : utf-8 -*-
+
 require "ares_client"
 require "minitest/autorun"
 
