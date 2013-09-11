@@ -3,7 +3,7 @@ module AresClient
   # model pro praci se zakladnim vypisem ARES
   class Records
 
-    attr_accessor :ic, :basic_output, :response
+    attr_accessor :ic, :basic_output, :response, :http_response
 
     include HTTParty
     base_uri 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi'
@@ -13,7 +13,7 @@ module AresClient
     end
 
     def fetch
-      http_response = self.class.get("?ico=#{ic}&jazyk=cz&aktivni=false&ver=1.0.2")
+      self.http_response = self.class.get("?ico=#{ic}&jazyk=cz&aktivni=false&ver=1.0.2")
       self.response = http_response.parsed_response
     end
 

@@ -3,7 +3,7 @@ module AresClient
   # model pro praci s vypisem zmen v ARES
   class Changes
 
-    attr_accessor :source, :response, :data, :parsed_response, :http_response
+    attr_accessor :source, :data, :parsed_response, :range_http_response, :http_response
     attr_accessor :date, :batch_id, :all
 
     include HTTParty
@@ -20,8 +20,8 @@ module AresClient
     end
 
     def fetch_range
-      @http_response = self.class.get("?cislo_zdroje=#{source.id}")
-      @data = http_response.parsed_response
+      self.range_http_response = self.class.get("?cislo_zdroje=#{source.id}")
+      @data = range_http_response.parsed_response
       puts "Source #{source.name} : #{from}..#{to}"
       (from..to)
     end
@@ -38,8 +38,8 @@ module AresClient
 
     def fetch(batch_id)
       self.batch_id = batch_id
-      self.response = self.class.get("?cislo_zdroje=#{source.id}&cislo_davky_od=#{batch_id}&cislo_davky_do=#{batch_id}")
-      @parsed_response = response.parsed_response
+      self.http_response = self.class.get("?cislo_zdroje=#{source.id}&cislo_davky_od=#{batch_id}&cislo_davky_do=#{batch_id}")
+      @parsed_response = http_response.parsed_response
     end
 
     def date
