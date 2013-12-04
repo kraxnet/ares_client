@@ -41,6 +41,42 @@ module AresClient
       basic_output['Datum_vzniku']
     end
 
+    def street
+      basic_output['Adresa_ARES']['Nazev_ulice']
+    end
+
+    def street_no
+      basic_output['Adresa_ARES']['Cislo_domovni']
+    end
+
+    def zip
+      basic_output['Adresa_ARES']['PSC']
+    end
+
+    def country
+      basic_output['Adresa_ARES']['Nazev_statu']
+    end
+
+    def city
+      basic_output['Adresa_ARES']['Nazev_obce']
+    end
+
+    def legal_form
+      basic_output['Pravni_forma']['Nazev_PF']
+    end
+
+    def court_info
+      basic_output['Registrace_OR'].first if basic_output['Registrace_OR']
+    end
+
+    def court_name
+      court_info['Spisova_znacka']['Soud']['Text'] if court_info && court_info['Spisova_znacka']
+    end
+
+    def court_reg_no
+      court_info['Spisova_znacka']['Oddil_vlozka'] if court_info && court_info['Spisova_znacka']
+    end
+
     def self.find_by_ic(ic)
       record = self.new(ic)
       record.fetch
