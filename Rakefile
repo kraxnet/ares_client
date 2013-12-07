@@ -7,3 +7,5 @@ end
 
 desc "Run tests"
 task :test
+
+task :default => [:test]
