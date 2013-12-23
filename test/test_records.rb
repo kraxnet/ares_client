@@ -12,6 +12,13 @@ class AresClient::TestRecords < Minitest::Test
     assert_equal('CZ8002180461', record.dic)
     assert_equal('22301224', record.address_code)
     assert_equal('22139753', record.building_code)
+    assert_equal('Kamenická', record.street)
+    assert_equal('599', record.street_no)
+    assert_equal('Praha', record.city)
+    assert_equal('Česká republika', record.country)
+    assert_equal('17000', record.zip)
+    assert_nil(record.court_name)
+    assert_nil(record.court_reg_no)
   end
 
   def test_fetching_and_parsing
@@ -21,6 +28,13 @@ class AresClient::TestRecords < Minitest::Test
     assert_equal('CZ8002180461', record.dic)
     assert_equal('22301224', record.address_code)
     assert_equal('22139753', record.building_code)
+    assert_equal('Kamenická', record.street)
+    assert_equal('599', record.street_no)
+    assert_equal('Praha', record.city)
+    assert_equal('Česká republika', record.country)
+    assert_equal('17000', record.zip)
+    assert_nil(record.court_name)
+    assert_nil(record.court_reg_no)
   end
 
 end
