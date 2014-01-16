@@ -18,14 +18,14 @@ class AresClient::TestChanges < Minitest::Test
     assert_equal('86751166', changes.updated.sort.last)
   end
 
-  def test_fetching_and_parsing
-    source = AresClient::Sources.find(4)
-    changes = AresClient::Changes.new(source)
-    changes.fetch(44)
-    assert_equal(0, changes.added.count)
-    assert_equal(2638, changes.updated.count)
-    assert_equal(257, changes.deleted.count)
-  end
+  # def test_fetching_and_parsing
+  #   source = AresClient::Sources.find(4)
+  #   changes = AresClient::Changes.new(source)
+  #   changes.fetch(44)
+  #   assert_equal(0, changes.added.count)
+  #   assert_equal(2638, changes.updated.count)
+  #   assert_equal(257, changes.deleted.count)
+  # end
 
 end
 

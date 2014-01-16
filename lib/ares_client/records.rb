@@ -84,10 +84,19 @@ module AresClient
     end
 
     def self.from_xml(xml)
-      request = new
-      request.response = MultiXml.parse(xml)
-      request.ic = request.basic_output['ICO']['__content__']
-      request
+      record = new
+      record.response = MultiXml.parse(xml)
+      record.ic = record.basic_output['ICO']['__content__'] if record.found?
+      record
+    end
+
+    def found?
+      return case response["Ares_odpovedi"]["Odpoved"]["Vysledek_hledani"]["Kod"]
+      when "1"
+        true
+      else
+        false
+      end
     end
 
   end

@@ -37,4 +37,14 @@ class AresClient::TestRecords < Minitest::Test
     assert_nil(record.court_reg_no)
   end
 
+  def test_record_found
+    record = AresClient::Records.from_xml(File.read('test/fixtures/67787231.xml'))
+    assert_equal(true, record.found?)
+  end
+
+  def test_record_not_found
+    record = AresClient::Records.from_xml(File.read('test/fixtures/68972085.xml'))
+    assert_equal(false, record.found?)
+  end
+
 end
