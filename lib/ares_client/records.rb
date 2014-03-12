@@ -40,6 +40,11 @@ module AresClient
     def established_on
       basic_output['Datum_vzniku']
     end
+    alias_method :created_on, :established_on
+
+    def expired_on
+      basic_output['Datum_zaniku']
+    end
 
     def street
       basic_output['Adresa_ARES']['Nazev_ulice']
